@@ -3,6 +3,20 @@
 <head>
   <meta charset="utf-8">
   <title>Hey there | randomguy400.com</title>
+  <script type="text/javascript">
+
+  var titleText = document.title;
+
+  function titleMarquee() {
+
+   titleText = titleText.substring(1, titleText.length) + titleText.substring(0, 1);
+   document.title = titleText;
+   setTimeout("titleMarquee()", 450);
+  }
+
+  </script>
+
+<body onload="titleMarquee()">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- you can change the website icon by change the href link -->
   <link rel="icon" type="image/png" href="./img/randomguy400.png">
